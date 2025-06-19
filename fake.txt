@@ -1,0 +1,11 @@
+<?php 
+echo $password = password_hash('123456', PASSWORD_DEFAULT);
+// 
+INSERT INTO users (name, username, password, role)
+VALUES ('Admin One', 'admin1', '<hashed_password>', 'admin');
+
+INSERT INTO users (name, username, password, role)
+VALUES ('Manager1', 'Manager1',  '$2y$10$fZJ4SpgHClQjMqvJesIo/u1SIPOeu7t9kLM04Uvvu3O2qS1535jQ2', 'manager');
+
+INSERT INTO users (name, username, password, role)
+VALUES ('Cashier1', 'Cashier1',  '$2y$10$fZJ4SpgHClQjMqvJesIo/u1SIPOeu7t9kLM04Uvvu3O2qS1535jQ2', 'Cashier');
